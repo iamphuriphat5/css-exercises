@@ -1,1 +1,7 @@
-/* Add CSS Styling */
+.pink {background-color: pink;}
+
+.pink.third {font-size: 24px}
+
+#blue {color: blue; font-size: 36px}
+
+#green {background-color: lightgreen; font-size: 24px; font-weight: bold}
