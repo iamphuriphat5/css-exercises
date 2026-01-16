@@ -2,12 +2,26 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  /*My solution*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex: 1;
 }
 
 .footer {
@@ -20,10 +34,43 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+.cards {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+  width: 300px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.card:hover {
+  /* Styles to apply when the mouse hovers over the card */
+  transform: translateY(-5px) scale(1.02); /* Moves the card up slightly and scales it */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Makes the shadow more prominent */
+  background-color: #f9f9f9; /* Changes background color */
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
